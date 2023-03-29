@@ -12,9 +12,13 @@ const FilmList = (props) => {
               src={movie.Poster === "N/A" ? fallbackImage : movie.Poster}
               alt={movie.Title}
             />
-            <div>
+            <div className='movie-details'>
               <h3>{movie.Title}</h3>
               <p>{movie.Year}</p>
+              <p>{movie.Genre}</p>
+              <p>Director: {movie.Director}</p>
+              <p>Actors: {movie.Actors}</p>
+              <p>Prizes & Awards: {movie.Awards}</p>
             </div>
           </div>
         ))}

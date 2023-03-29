@@ -38,26 +38,37 @@ body {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.5);
-    
   }
 
   .page-title {
     font-size: 48px;
     padding: 1rem;
     margin-left: 2rem;
+    text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.5);
   }
 
   h3 {
-    padding: 0.5rem;
-    margin-left: 2rem;
     font-size: 24px;
   }
 
   p {
-    padding: 0.5rem;
-    margin-left: 2rem;
     font-size: 20px;
+  }
+
+  .movie-details {
+    border-style: groove;
+    border-color: beige;
+    color: black;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    width: 400px;
+    height: 325px;
+    background-image: url('../images/Sakura.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
   }
   
   .movie-search > .row {
