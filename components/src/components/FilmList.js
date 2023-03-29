@@ -7,7 +7,7 @@ const FilmList = (props) => {
     return (
       <div className='row'>
         {movies.map((movie, index) => (
-          <div className='col' key={index}>
+          <div className='col titles' key={index}>
             <img
               src={movie.Poster === "N/A" ? fallbackImage : movie.Poster}
               alt={movie.Title}

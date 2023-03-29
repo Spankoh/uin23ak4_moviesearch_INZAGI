@@ -18273,8 +18273,30 @@ progress {
   }
 }
 body {
-  background: #121212;
-  color: #fff;
+  color: beige;
+  background-image: url("../images/Sakura.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.5);
+}
+
+.page-title {
+  font-size: 48px;
+  padding: 1rem;
+  margin-left: 2rem;
+}
+
+h3, .h3 {
+  padding: 0.5rem;
+  margin-left: 2rem;
+  font-size: 24px;
+}
+
+p {
+  padding: 0.5rem;
+  margin-left: 2rem;
+  font-size: 20px;
 }
 
 .movie-search > .row {
@@ -18283,9 +18305,12 @@ body {
 }
 
 img {
-  height: 500px;
+  border-style: groove;
+  border-color: beige;
+  border-width: 0.5rem;
+  height: 600px;
   width: 400px;
-  padding: 1rem;
+  margin-left: 2rem;
 }
 
 header {

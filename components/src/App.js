@@ -5,6 +5,7 @@ import './sass/main.scss';
 import FilmList from './components/FilmList';
 import HeaderFilmList from './components/HeaderFilmList';
 import FilmSearchBar from './components/FilmSearchBar';
+import FilmInfo from './components/FilmInformation';
 
 // Mye her er en basert fra en YouTube video som gir en god forklaring på hvordan man arbeider med API'er i sammenheng med React.//
 //Referanse på video https://www.youtube.com/watch?v=jc9_Bqzy2YQ//
@@ -35,7 +36,7 @@ const Filmsearch = () => {
   return (
     <div className='container-fluid movie-search'>
       <div className='row d-flex align-items-center mt-4 mb-4'>
-        <HeaderFilmList header="Moooovie!"/>
+        <HeaderFilmList header="E I G A - ムーヴィー"/>
         <FilmSearchBar searchValue={searchValue} setSearchValue={setSearchValue}/>
       </div>
       <div className='row'>
