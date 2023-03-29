@@ -33,7 +33,6 @@
 // 8. Add additional custom code here
 
 body {
-    color: beige;
     background-image: url('../images/Sakura.jpg');
     background-size: cover;
     background-position: center center;
@@ -41,6 +40,7 @@ body {
   }
 
   .page-title {
+    color: beige;
     font-size: 48px;
     padding: 1rem;
     margin-left: 2rem;
@@ -48,24 +48,29 @@ body {
   }
 
   h3 {
-    font-size: 24px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    color: beige;
+    font-size: 28px;
   }
 
   p {
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    color: beige;
     font-size: 20px;
   }
 
   .movie-details {
     border-style: groove;
     border-color: beige;
+    border-radius: 25px;
     color: black;
     margin-left: 2rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
     margin-bottom: 1rem;
     padding: 1rem;
     width: 400px;
-    height: 325px;
-    background-image: url('../images/Sakura.jpg');
+    height: 400px;
+    background-image: url('../images/Sakura 2.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -79,6 +84,7 @@ body {
 img {
   border-style: groove;
   border-color: beige;
+  border-radius: 25px;
   border-width: 0.5rem;
   height: 600px;
   width: 400px;
