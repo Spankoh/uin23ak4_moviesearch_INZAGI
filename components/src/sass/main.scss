@@ -32,65 +32,89 @@
 
 // 8. Add additional custom code here
 
+// Bildene er hentet fra en gratis bildebank kalt Unsplash. //
 body {
+    background: pink;
     background-image: url('../images/Sakura.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    position: absolute;
   }
 
   .page-title {
+    text-shadow: 2px 3px 4px violet;
     color: beige;
     font-size: 48px;
+    font-weight: bold;
     padding: 1rem;
     margin-left: 2rem;
-    text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.5);
   }
 
   h3 {
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 2px violet;
     color: beige;
-    font-size: 28px;
+    font-size: 24px;
+    font-weight: 900;
   }
 
   p {
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 2px violet;
     color: beige;
     font-size: 20px;
+    font-weight: bold;
   }
 
+/* Litt vanskelig å få bildene til å passe med hverandre, men jeg vil heller ofre kvalitet for symetri med hverandre 
+enn at et bilde er høyere eller bredere enn det andre. Skaper et mer estetisk utseende mener jeg. */
   .movie-details {
-    border-style: groove;
-    border-color: beige;
-    border-radius: 25px;
-    color: black;
-    margin-left: 2rem;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    padding: 1rem;
+    height: 395px;
     width: 400px;
-    height: 400px;
+    margin-left: 2rem;
+    margin-bottom: 5rem;
+    padding: 1rem;
+    border-style: outset;
+    border-color: whitesmoke;
+    border-width: 0.5rem;
+    border-top-width: 0px;
+    border-radius: 25px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
     background-image: url('../images/Sakura 2.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
   }
   
+.movie-posters {
+  height: 600px;
+  width: 400px;
+  margin-left: 2rem;
+  margin-top: 2rem;
+  border-style: outset;
+  border-color: whitesmoke;
+  border-width: 0.5rem;
+  border-radius: 25px;
+}
+
   .movie-search > .row {
     overflow-x: auto;
     flex-wrap: nowrap;
   }
-  
-img {
-  border-style: groove;
-  border-color: beige;
-  border-radius: 25px;
-  border-width: 0.5rem;
-  height: 600px;
-  width: 400px;
-  margin-left: 2rem;
+
+/* Alt under er for å skape en effekt som gjør at den skal kun fremvise detaljene til filmen
+ved å hover over film plakatene. */
+.movie-posters:hover {
+  transform: scale(1.0);
+  border-bottom-width: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 
-header {
-  font-size: 3rem;
+.movie-posters:hover ~ .movie-details {
+  display: block;
+}
+
+.movie-posters:not(:hover) ~ .movie-details {
+  display: none;
 }

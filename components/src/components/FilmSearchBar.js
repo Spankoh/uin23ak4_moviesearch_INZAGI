@@ -1,5 +1,6 @@
 import React from "react";
 
+// Dette er for å skape søkefelt og funksjonaliteten til søkefeltet. //
 const FilmSearchBar = (props) => {
     return(
         <div className="col col-small">
@@ -7,7 +8,7 @@ const FilmSearchBar = (props) => {
             className="form-control"
             value={props.value} 
             onChange={(event)=> props.setSearchValue(event.target.value)}
-            placeholder="Search for a movie..."
+            placeholder="Search for a movie ..."
             ></input>
         </div>
     )
