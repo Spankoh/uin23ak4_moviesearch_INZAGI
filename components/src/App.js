@@ -7,7 +7,7 @@ import HeaderFilmList from './components/HeaderFilmList';
 import FilmSearchBar from './components/FilmSearchBar';
 
 /* Mye i dette prosjektet er basert eller referert fra en YouTube video som gir en god forklaring på hvordan
-man arbeider med API'er i sammenheng med React. */
+man arbeider med API'er i sammenheng med React. Også en del bruk av Stack Overflow og W3Schools. */
 // Referanse på video https://www.youtube.com/watch?v=jc9_Bqzy2YQ //
 const Filmsearch = () => {
   const [movies, setMovies] = useState([]);
@@ -27,8 +27,8 @@ const Filmsearch = () => {
   };
   
 
-/* Her henter vi detaljer og informasjon fra filmens unike ID kalt imdbID vi vil da få printa ut informasjonen.
-Her og litt andre ting har jeg fått tips & litt hjelp om hvordan dette funker fra medstudenter og tidligere studenter. */
+/* Her henter vi detaljer og informasjon fra filmens unike ID kalt imdbID vi vil da få printa ut informasjonen. Her og 
+litt andre ting har jeg også fått tips og litt hjelp om hvordan dette funker fra medstudenter og tidligere studenter. */
   const getMovieDetails = async () => {
     const {Search: search} = await getMovieRequest();
     const movieDetailsPromise = search.map(async movie => {
